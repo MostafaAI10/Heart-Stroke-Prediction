@@ -71,7 +71,7 @@ Airflow
     └── Data Ingestion & Pipeline Automation
 ```
 
-![Screenshot 2022-04-27 at 6 56 27 PM](DSP.drawio.png)
+![Screenshot 2022-04-27 at 6 56 27 PM](https://github.com/MostafaAI10/Heart-Stroke-Prediction/blob/92badced2051c74103c2e4ad840dd785c47c0675/heart_stroke_prediction/DSP.drawio.png)
 
 ---
 
