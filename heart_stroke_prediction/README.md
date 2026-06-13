@@ -2,7 +2,7 @@
 
 An end-to-end MLOps-powered healthcare platform for predicting stroke risk using machine learning, real-time APIs, workflow orchestration, monitoring, and interactive web applications.
 
-## 📌 Overview
+## Overview
 
 Heart Stroke Prediction System is a comprehensive machine learning solution designed to assist healthcare professionals in assessing a patient's risk of stroke based on clinical and demographic information. By leveraging predictive analytics, the system provides risk assessments that can support early intervention and informed medical decision-making.
 
@@ -220,6 +220,7 @@ This project is intended for educational, research, and decision-support purpose
 ## Contact Information
 
 **MOSTAFA ABDELHAMED**
+
 Email: [abdelhamedmostafa190@gmail.com](mailto:abdelhamedmostafa190@gmail.com)
 
 ---
