@@ -22,27 +22,27 @@ Users can enter patient health information through a user-friendly web interface
 
 ## ✨ Key Features
 
-### 🌐 Interactive Web Application
+### 1: Interactive Web Application
 
 Built with **Streamlit** to provide an intuitive interface for patient data entry, prediction visualization, and result interpretation.
 
-### ⚡ High-Performance Prediction API
+### 2: High-Performance Prediction API
 
 Powered by **FastAPI**, enabling scalable and efficient prediction services for external applications and healthcare systems.
 
-### 🤖 Machine Learning Model Package
+### 3: Machine Learning Model Package
 
 A production-ready Python package (`stroke-pred-p0w11`) trained to predict stroke probability using clinical indicators.
 
-### 🗄️ Data Management Layer
+### 3: Data Management Layer
 
 Utilizes **PostgreSQL** and **SQLAlchemy** for reliable data storage, management, and persistence.
 
-### 🔄 Automated Data Ingestion Pipeline
+### 4: Automated Data Ingestion Pipeline
 
 Implemented with **Apache Airflow** to automate data collection, processing, and workflow orchestration.
 
-### 📈 Prediction Monitoring & Observability
+### 5: Prediction Monitoring & Observability
 
 Integrated with **Grafana** dashboards for monitoring prediction metrics, system performance, and operational insights.
 
