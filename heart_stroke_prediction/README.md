@@ -118,7 +118,7 @@ Features include:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone <github.com/MostafaAI10/Heart-Stroke-Prediction/tree/main>
 cd stroke_heart_prediction
 ```
 
