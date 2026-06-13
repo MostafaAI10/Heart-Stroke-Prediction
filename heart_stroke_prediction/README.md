@@ -1,65 +1,216 @@
-# Heart Stroke Predictions Model In Production
+# 🫀 Heart Stroke Prediction System
 
-## Users : :stethoscope:
-* Medical professionals :man_health_worker:
-* Clinics / hospitals :hospital:
-* Medical devices :microscope:
+An end-to-end MLOps-powered healthcare platform for predicting stroke risk using machine learning, real-time APIs, workflow orchestration, monitoring, and interactive web applications.
 
-## Usage Description: :anatomical_heart:
+## 📌 Overview
 
-After providing the necessary information to the health professionals of the user or inputting his or her personal & health information on the medical device or the Web Interface.
-Our model will use the the information provided by the user above to predict the probability of him having a stroke. 
-After that the Web interface will display a detailed result about the patient status and possible precautions or advices to visit a professional
+Heart Stroke Prediction System is a comprehensive machine learning solution designed to assist healthcare professionals in assessing a patient's risk of stroke based on clinical and demographic information. By leveraging predictive analytics, the system provides risk assessments that can support early intervention and informed medical decision-making.
 
-## Features:
-Our application will feature a :
-* Web interface & Data Search Interface using Streamlit
-* Prediciton API using FastApi
-* Machine Learning Model as Python Package "stroke-pred-p0w11'
-* Data Storage unit using PostgresSQl & Sqlalchmey
-* Data Ingestion job using Airflow to collect our data based on the user inputs.
-* Prediction monitoring dashboard using Gafana
+Users can enter patient health information through a user-friendly web interface or integrated medical devices. The trained machine learning model then analyzes the provided data and generates a stroke risk prediction along with actionable insights, recommendations, and precautionary guidance.
 
-## Dataset: 
-* 11 clinical features for predicting stroke events:<br>
-https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset</br>
+---
 
-## Postgres Database Setup :
+## 🎯 Target Users
 
-1. Make sure to install database dependencies [psycopg2, python-dotenv, sqlalchemy]<br>
-   -Check stroke_heart_prediciton/requirements.txt (Remark For Mac, Linux Users psycopg2-binary) :point_left:</br>
-3. Create a (.env) file in the main Root =>  stroke_heart_prediciton/.env
-4. (.env) File Should Contain: :exclamation: 
+* 🩺 Healthcare Professionals
+* 👨‍⚕️ Doctors & Medical Practitioners
+* 🏥 Clinics & Hospitals
+* 🔬 Medical Device Integrators
+* 📊 Healthcare Researchers
+
+---
+
+## ✨ Key Features
+
+### 🌐 Interactive Web Application
+
+Built with **Streamlit** to provide an intuitive interface for patient data entry, prediction visualization, and result interpretation.
+
+### ⚡ High-Performance Prediction API
+
+Powered by **FastAPI**, enabling scalable and efficient prediction services for external applications and healthcare systems.
+
+### 🤖 Machine Learning Model Package
+
+A production-ready Python package (`stroke-pred-p0w11`) trained to predict stroke probability using clinical indicators.
+
+### 🗄️ Data Management Layer
+
+Utilizes **PostgreSQL** and **SQLAlchemy** for reliable data storage, management, and persistence.
+
+### 🔄 Automated Data Ingestion Pipeline
+
+Implemented with **Apache Airflow** to automate data collection, processing, and workflow orchestration.
+
+### 📈 Prediction Monitoring & Observability
+
+Integrated with **Grafana** dashboards for monitoring prediction metrics, system performance, and operational insights.
+
+---
+
+## 🏗️ System Architecture
+
+```text
+User Input
+    │
+    ▼
+Streamlit Web Interface
+    │
+    ▼
+FastAPI Prediction Service
+    │
+    ▼
+Machine Learning Model
+    │
+    ├── Store Results → PostgreSQL
+    │
+    └── Monitor Metrics → Grafana
+
+Airflow
+    │
+    └── Data Ingestion & Pipeline Automation
 ```
-[POSTGRES_DB]
-POSTGRES_USER=[User]
-POSTGRES_PASSWORD=[Password]
-POSTGRES_SERVER=[Server]
-POSTGRES_PORT=[Port]
-POSTGRES_DB=[Database]
 
-[FastApi]
-BACKEND_SERVER =[Server]
+---
 
+## 📊 Dataset
+
+The model is trained using the Stroke Prediction Dataset containing 11 clinical and demographic features associated with stroke risk.
+
+Dataset Source:
+https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
+
+Features include:
+
+* Gender
+* Age
+* Hypertension
+* Heart Disease
+* Marital Status
+* Work Type
+* Residence Type
+* Average Glucose Level
+* BMI
+* Smoking Status
+* Additional demographic attributes
+
+---
+
+## 🛠️ Technology Stack
+
+| Component              | Technology           |
+| ---------------------- | -------------------- |
+| Frontend               | Streamlit            |
+| Backend API            | FastAPI              |
+| Machine Learning       | Python, Scikit-Learn |
+| Database               | PostgreSQL           |
+| ORM                    | SQLAlchemy           |
+| Workflow Orchestration | Apache Airflow       |
+| Monitoring             | Grafana              |
+| Containerization       | Docker (Optional)    |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd stroke_heart_prediction
 ```
-4. Open terminal and go to Cd stroke_heart_prediciton/postgres 
-5. Run Python createdb.py to create the tables & relationships in your database
 
-## Airflow ( Follow the steps in Repo ) :timer_clock:
-[Airflow Repo - README.md](https://github.com/ibrahim-Sobh/heart_stroke_airflow#readme)<br>
-[Link to Airflow](http://34.135.123.223:8080/home)</br>
-## Grafana ( Follow the steps in Repo ) :cyclone:
-[Grafana Repo - README.md](https://github.com/ibrahim-Sobh/heart_stroke_grafana#readme)<br>
-[Link to Grafana](https://grafa-stroke.herokuapp.com/d/LDFHt43nk/feature-monitoring?orgId=1)</br>
+### 2. Install Dependencies
 
-## Heroku  Streamlit 
-[Link to Web Interface](http://35.238.16.200:8501/)
+```bash
+pip install -r requirements.txt
+```
 
-## Execute Program Locally:
+For macOS/Linux users:
 
-1. Cd stroke_heart_prediciton/stroke_api; uvicorn  main:app --host 0.0.0.0 --port 8005;
+```bash
+pip install psycopg2-binary
+```
 
-2. streamlit run web_interface.py --server.port 8010;
+---
+
+## ⚙️ Environment Configuration
+
+Create a `.env` file in the project root:
+
+```env
+POSTGRES_USER=your_username
+POSTGRES_PASSWORD=your_password
+POSTGRES_SERVER=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=stroke_prediction
+
+BACKEND_SERVER=http://localhost:8005
+```
+
+---
+
+## 🗄️ Database Setup
+
+Navigate to the PostgreSQL module:
+
+```bash
+cd postgres
+python createdb.py
+```
+
+This will automatically create the required tables and database relationships.
+
+---
+
+## ⏲️ Airflow Setup
+
+Follow the instructions provided in the Airflow documentation inside the repository.
+
+---
+
+## 📈 Grafana Dashboard
+
+Follow the Grafana setup guide available in the repository to configure monitoring and visualization dashboards.
+
+---
+
+## ▶️ Running the Application
+
+### Start FastAPI Backend
+
+```bash
+cd stroke_api
+
+uvicorn main:app \
+--host 0.0.0.0 \
+--port 8005
+```
+
+### Launch Streamlit Interface
+
+```bash
+streamlit run web_interface.py --server.port 8010
+```
+
+---
+
+## 🌟 Project Goals
+
+* Enable early stroke risk detection.
+* Support healthcare professionals with AI-assisted decision making.
+* Demonstrate production-grade MLOps practices.
+* Provide scalable deployment and monitoring capabilities.
+* Bridge machine learning research with real-world healthcare applications.
+
+---
+
+## ⚠️ Disclaimer
+
+This project is intended for educational, research, and decision-support purposes only. Predictions generated by the system should not replace professional medical diagnosis, treatment, or consultation.
+
 
 ## System Architecture: :bricks:
 ![Screenshot 2022-04-27 at 6 56 27 PM](DSP.drawio.png)
+
+
