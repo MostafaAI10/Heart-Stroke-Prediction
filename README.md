@@ -1,4 +1,4 @@
-# Heart Stroke Prediction Syste
+# Heart Stroke Prediction System
 
 ![image alt](https://github.com/MostafaAI10/Heart-Stroke-Prediction/blob/d50113195aafdb103ab8f90145cdfeadbb4cbd67/Banner.png)
 
