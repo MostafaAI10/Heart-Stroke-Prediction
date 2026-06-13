@@ -168,6 +168,7 @@ This will automatically create the required tables and database relationships.
 ## ⏲️ Airflow Setup
 
 Follow the instructions provided in the Airflow documentation inside the repository.
+**AirFlow Setup:** [AirFlow](https://airflow.apache.org/)
 
 ---
 
