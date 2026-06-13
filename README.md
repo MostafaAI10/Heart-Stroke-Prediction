@@ -1,5 +1,7 @@
 # Heart Stroke Prediction System
 
+![image alt](https://github.com/MostafaAI10/VisualScribe-Image-Captioning-CNN-LSTM/blob/8cc798c134312a4669c8e93f8ed05ad4a7b67c6e/visualscribe_banner.png)
+
 An end-to-end MLOps-powered healthcare platform for predicting stroke risk using machine learning, real-time APIs, workflow orchestration, monitoring, and interactive web applications.
 
 ## Overview
