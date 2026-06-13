@@ -71,6 +71,8 @@ Airflow
     └── Data Ingestion & Pipeline Automation
 ```
 
+![Screenshot 2022-04-27 at 6 56 27 PM](DSP.drawio.png)
+
 ---
 
 ## 📊 Dataset
