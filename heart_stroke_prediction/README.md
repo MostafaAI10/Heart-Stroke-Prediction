@@ -1,4 +1,4 @@
-# 🫀 Heart Stroke Prediction System
+# Heart Stroke Prediction System
 
 An end-to-end MLOps-powered healthcare platform for predicting stroke risk using machine learning, real-time APIs, workflow orchestration, monitoring, and interactive web applications.
 
@@ -12,11 +12,11 @@ Users can enter patient health information through a user-friendly web interface
 
 ## 🎯 Target Users
 
-* 🩺 Healthcare Professionals
-* 👨‍⚕️ Doctors & Medical Practitioners
-* 🏥 Clinics & Hospitals
-* 🔬 Medical Device Integrators
-* 📊 Healthcare Researchers
+* Healthcare Professionals
+* Doctors & Medical Practitioners
+* Clinics & Hospitals
+* Medical Device Integrators
+* Healthcare Researchers
 
 ---
 
