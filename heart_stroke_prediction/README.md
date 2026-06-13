@@ -165,16 +165,19 @@ This will automatically create the required tables and database relationships.
 
 ---
 
-## ⏲️ Airflow Setup
+## Airflow Setup
 
 Follow the instructions provided in the Airflow documentation inside the repository.
+
 **AirFlow Setup:** [AirFlow](https://airflow.apache.org/)
 
 ---
 
-## 📈 Grafana Dashboard
+## Grafana Dashboard
 
 Follow the Grafana setup guide available in the repository to configure monitoring and visualization dashboards.
+
+**Grafana:** [Get Started](https://grafana.com/)
 
 ---
 
